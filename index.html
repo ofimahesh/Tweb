@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tweb — Login Warmup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Login View -->
+    <section id="login-view" class="card">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Sign in to check your Tweb workspace.</p>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="username">Username or Email</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="e.g. ofimahesh"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter at least 4 characters"
+            required
+          />
+        </div>
+
+        <p id="error-msg" class="error" aria-live="polite"></p>
+        <button type="submit" class="btn primary-btn">Log In</button>
+      </form>
+    </section>
+
+    <!-- Mini Dashboard View (shown after login) -->
+    <section id="dashboard-view" class="card hidden">
+      <span class="badge">Logged In</span>
+      <h1 id="welcome-title">Hello!</h1>
+      <p class="subtitle">
+        Your frontend warmup is live on the <code>build-login-ui</code> branch.
+      </p>
+
+      <div class="info-box">
+        <strong>Squad Status:</strong> 4 members ready to brainstorm real-world ideas.
+      </div>
+
+      <button id="logout-btn" type="button" class="btn secondary-btn">
+        Log Out
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
