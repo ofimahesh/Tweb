@@ -19,8 +19,8 @@ loginForm.addEventListener("submit", (event) => {
     return;
   }
 
-  if (password.length < 4) {
-    errorMsg.textContent = "Password must be at least 4 characters.";
+  if (password.length < 6) {
+    errorMsg.textContent = "Password must be at least 6 characters.";
     return;
   }
 
